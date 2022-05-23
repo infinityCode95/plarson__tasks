@@ -1,0 +1,189 @@
+/* ! Обнуление стилей */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul li {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+
+/* !--------------------Стили-------------------- */
+
+
+.wrapper {
+     color: black;
+     background-color: white;
+}
+
+/* ! Header */
+
+.header {
+     min-height: 50px;
+     padding: 15px 10px;
+     background-color: #e3d9ca;
+}
+
+
+.header__container {
+     max-width: 1200px;
+     margin:  0 auto;
+}
+
+.menu__list {
+     height: 100%;     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.menu__item {
+     font-size: 17px;
+     font-weight: 600;
+}
+
+
+/* ! Main */
+
+.main {
+     height: 595px;
+     flex: 1 1 auto;
+     overflow: hidden;
+}
+
+.main__flex-wrapper {
+     display: flex;
+}
+
+/* ! Users */
+
+.users {
+     overflow: auto;
+     width: 200px;
+     height: 600px;
+     padding: 30px 10px;
+}
+
+.users__block {
+     margin: 0px 5px;
+     padding: 20px 5px;
+     display: flex;
+     flex-direction: column;
+     gap: 50px 0px;
+}
+
+
+.carduser {
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px 5px;
+     box-shadow: 4px 4px 16px 1px rgba(34, 60, 80, 0.85);
+     border-radius: 15px;         
+}
+
+
+.carduser__avatar {
+     height: 70px;
+     width: 70px;     
+}
+
+.carduser__title {
+     font-weight: 600;
+}
+
+.carduser__text {
+     text-align: center;
+}
+
+
+/* ! Chat */
+
+.chat {
+}
+
+
+.chat__body {
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     gap: 50px 0px;
+     overflow: auto;
+     height: 600px;
+}
+
+.chat__message {
+     padding: 20px 10px;
+     background-color: #735dfc;
+     border-radius: 15px;
+     color: white;
+     font-weight: 500;
+}
+
+/* ! Footer */
+
+.footer {
+     width: 100%;
+     min-height: 100px;
+     background-color: #e3d9ca;
+     padding: 25px 10px;
+}
+
+.footer__input-wrapper {
+     display: flex;
+     justify-content: center;
+}
+
+.footer__input {
+     padding: 10px 40px;
+     width: 90%;
+     height: 50px;
+     border-radius: 15px;
+     outline: none;
+}
